@@ -12,3 +12,4 @@ Q5 # Muhammad Sabeeh, 23K-0002
 Q6 # Muhammad Sabeeh, 23K-0002
 ![Screenshot 2023-08-23 151046](https://github.com/Sabeeh138/PfFall23/assets/142867481/41ba1493-6b5e-48ac-9c0d-929134edb51b)
 Q7 # Muhammad Sabeeh, 23K-0002
+![image](https://github.com/Sabeeh138/PfFall23/assets/142867481/0e1f57c0-40fb-46a9-a3a4-dbd1b0ade372)
