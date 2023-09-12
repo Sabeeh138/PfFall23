@@ -1,3 +1,7 @@
+// k230002
+// programmer:Muhammad Sabeeh
+// LAB4
+// date:9/12/23
 #include <stdio.h>
 #include<math.h>
 main(){
