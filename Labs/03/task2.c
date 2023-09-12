@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <math.h>
+
 int main() {
 	float p = 0.0, b = 0.0, h = 0.0;
 	printf("Enter Length of perpendicular side: ");
