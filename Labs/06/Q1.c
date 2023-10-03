@@ -1,3 +1,8 @@
+/**.
+* Programmer : Muhammad Sabeeh
+* Desc : practicing loops
+
+
 #include <stdio.h>
 
 int main() {
