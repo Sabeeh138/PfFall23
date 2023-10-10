@@ -1,3 +1,7 @@
+/*
+* Programmer : Muhammad Sabeeh
+* Desc : shifting arrays
+/*
 #include <stdio.h>
 
 int gcd(int a, int b) {
