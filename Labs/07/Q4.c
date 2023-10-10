@@ -1,4 +1,7 @@
-
+/*
+* Programmer : Muhammad Sabeeh
+* Desc : find if array is symmetric or not
+/*
 
 
 
