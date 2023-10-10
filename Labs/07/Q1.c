@@ -1,3 +1,7 @@
+/*
+* Programmer : Muhammad Sabeeh
+* Desc : division without division operator
+/*
 #include <stdio.h>
 
 int main() {
