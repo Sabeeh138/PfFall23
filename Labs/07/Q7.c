@@ -1,5 +1,7 @@
-
-
+/*
+* Programmer : Muhammad Sabeeh
+* Desc : matrix multiplication
+/*
 
 #include <stdio.h>
 
