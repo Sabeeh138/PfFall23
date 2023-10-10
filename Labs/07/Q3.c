@@ -1,3 +1,9 @@
+/*
+* Programmer : Muhammad Sabeeh
+* Desc : dividing and adding number
+/*
+
+
 #include <stdio.h>
 
 int main() {
