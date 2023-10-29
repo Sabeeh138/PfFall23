@@ -2,7 +2,8 @@
 * Programmer : Muhammad Sabeeh
 * Desc : input a string and find the count of a char used
 /*
-  
+#include <stdio.h>  
+#include <string.h>   
 int main() {
     char string[100];
     char searchChar;
