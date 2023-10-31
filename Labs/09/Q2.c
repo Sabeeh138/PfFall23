@@ -1,8 +1,8 @@
 #include <stdio.h>
 
-void reverse(int *arr, int size) {
+void reverse(int *arr, int s) {
     int *start = arr;
-    int *end = arr + size - 1;
+    int *end = arr + s - 1;
     int temp;
 
     while (start < end) {
@@ -10,12 +10,6 @@ void reverse(int *arr, int size) {
         temp = *start;
         *start = *end;
         *end = temp;
-
-        // Move the pointers inward
-        start++;
-        end--;
-    }
-}
 
 int main() {
     int arr[10];
