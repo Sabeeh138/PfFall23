@@ -11,34 +11,34 @@ int main() {
     srand(time(NULL));
 
     // Create and initialize arrays
-    char charArray[N];
-    int intArray[N];
-    long long int longLongArray[N];
+    char Arrayx[N];
+    int  Arrayy[N];
+    long long int Arrayz[N];
 
     for (int i = 0; i < N; i++) {
-        charArray[i] = rand() % 256;  // Random char value between 0 and 255
-        intArray[i] = rand();
-        longLongArray[i] = ((long long int)rand() << 32) | rand();
+        Arrayx[i] = rand() % 256;  // Random char value between 0 and 255
+        Arrayy[i] = rand();
+        Arrayz[i] = ((long long int)rand() << 32) | rand();
     }
 
     // Print addresses and values using pointer arithmetic
-    char *charPtr = charArray;
-    int *intPtr = intArray;
-    long long int *longLongPtr = longLongArray;
+    char *charPtr = Arrayx;
+    int *intPtr = Arrayy;
+    long long int *longLongPtr = Arrayz;
 
-    printf("\nPrinting charArray:\n");
+    printf("\nPrinting Arrayx:\n");
     for (int i = 0; i < N; i++) {
         printf("Address: %p, Value: %d\n", (void *)charPtr, *charPtr);
         charPtr++;
     }
 
-    printf("\nPrinting intArray:\n");
+    printf("\nPrinting Arrayy:\n");
     for (int i = 0; i < N; i++) {
         printf("Address: %p, Value: %d\n", (void *)intPtr, *intPtr);
         intPtr++;
     }
 
-    printf("\nPrinting longLongArray:\n");
+    printf("\nPrinting Arrayz:\n");
     for (int i = 0; i < N; i++) {
         printf("Address: %p, Value: %lld\n", (void *)longLongPtr, *longLongPtr);
         longLongPtr++;
