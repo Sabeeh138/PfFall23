@@ -1,3 +1,7 @@
+/*
+* Programmer : Muhammad Sabeeh
+* Desc : swapping using pointers
+/*
 #include <stdio.h>
 
 void reverse(int *arr, int s) {
