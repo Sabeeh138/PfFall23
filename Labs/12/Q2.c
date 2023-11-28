@@ -5,17 +5,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void createWordFile(const char *filename, const char *text) {
-    FILE *file = fopen(filename, "w");
+#define BUFFER_SIZE 1024
 
-    if (file == NULL) {
-        perror("Error creating file");
-        exit(EXIT_FAILURE);
+int compareFiles(const char *file1, const char *file2);
+
+int main() {
+    const char *file1 = "file1.docx";
+    const char *file2 = "file2.docx";
+
+    // Compare the contents of the files
+    if (compareFiles(file1, file2)) {
+        printf("Files are equal.\n");
+    } else {
+        printf("Files are not equal.\n");
     }
 
-    fprintf(file, "%s", text);
-
-    fclose(file);
+    return 0;
 }
 
 int compareFiles(const char *file1, const char *file2) {
@@ -27,41 +32,25 @@ int compareFiles(const char *file1, const char *file2) {
         exit(EXIT_FAILURE);
     }
 
-    int ch1, ch2;
-    while ((ch1 = fgetc(f1)) != EOF && (ch2 = fgetc(f2)) != EOF) {
-        if (ch1 != ch2) {
+    unsigned char buffer1[BUFFER_SIZE];
+    unsigned char buffer2[BUFFER_SIZE];
+    size_t bytesRead1, bytesRead2;
+
+    do {
+        bytesRead1 = fread(buffer1, 1, sizeof(buffer1), f1);
+        bytesRead2 = fread(buffer2, 1, sizeof(buffer2), f2);
+
+        if (bytesRead1 != bytesRead2 ||
+            memcmp(buffer1, buffer2, bytesRead1) != 0) {
             fclose(f1);
             fclose(f2);
             return 0; // Files are not equal
         }
-    }
+    } while (bytesRead1 > 0);
 
     fclose(f1);
     fclose(f2);
 
-    // If one file is longer than the other, they are not equal
-    if (ch1 != ch2) {
-        return 0;
-    }
-
     return 1; // Files are equal
 }
 
-int main() {
-    const char *file1 = "file1.docx";
-    const char *file2 = "file2.docx";
-    const char *text = "This is a test.";
-
-    // Create two Word files
-    createWordFile(file1, text);
-    createWordFile(file2, text);
-
-    // Compare the contents of the files
-    if (compareFiles(file1, file2)) {
-        printf("Files are equal.\n");
-    } else {
-        printf("Files are not equal.\n");
-    }
-
-    return 0;
-}
