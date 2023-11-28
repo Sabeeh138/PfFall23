@@ -1,3 +1,7 @@
+/*
+ * Creator: Muhammad Sabeeh
+ * Description: read csv file and count rows columns
+ */
 #include <stdio.h>
 #include <stdlib.h>
 
