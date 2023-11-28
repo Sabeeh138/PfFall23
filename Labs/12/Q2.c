@@ -1,3 +1,7 @@
+/*
+ * Creator: Muhammad Sabeeh
+ * Description: check if files are equal
+ */
 #include <stdio.h>
 #include <stdlib.h>
 
