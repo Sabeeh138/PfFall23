@@ -1,7 +1,11 @@
+/*
+* Programmer : Muhammad Sabeeh
+* Desc : arrays for best flight number
+/*
 #include<stdio.h>
 
 int main(){
-    
+    //init flight data
     int flights[5][5]={
         {1,1,300,0,0},
         {2,1,329,1,310},
@@ -13,6 +17,7 @@ int main(){
     const char* day=NULL;const char* highestEday=NULL;const char* highestMday=NULL;const char* lowestMday=NULL;const char* lowestEday=NULL;
     for (i = 0; i < 5; i++)
     {
+        //switch cases for days 
         if (flights[i][1]==1)
         {   
             if (minPriceMorning > flights[i][2])
