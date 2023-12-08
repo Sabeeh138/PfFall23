@@ -1,3 +1,7 @@
+/*
+* Programmer : Muhammad Sabeeh
+* Desc : 2d arrays for switching
+/*
 #include <stdio.h>
 
 // Function to perform sorting based on age and price
