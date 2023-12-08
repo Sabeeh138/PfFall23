@@ -1,3 +1,7 @@
+/*
+* Programmer : Muhammad Sabeeh
+* Desc : code for ramujan numbers
+/*
 #include <stdio.h>
 #include <math.h>
 
