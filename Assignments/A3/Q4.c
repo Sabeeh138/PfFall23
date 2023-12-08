@@ -1,4 +1,10 @@
-
+/*
+programmer:Muhammad Sabeeh
+ID:7/12/2023
+Descr: a program that calculates highest salary paid to workers in each department annd the detail of those worker
+             and the totol salaries paid by each department
+date:7/12/23
+*/
 #include <stdio.h>
 #include <string.h>
 
