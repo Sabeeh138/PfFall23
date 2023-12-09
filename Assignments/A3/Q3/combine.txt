@@ -1,0 +1,5 @@
+1,Sabeeh,100000
+2,kashif,20000
+3,hamza,50000
+4,alex,32000
+5,hitler,78000
