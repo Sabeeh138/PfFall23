@@ -1,3 +1,8 @@
+/*
+name:Muhammad Sabeeh
+ID:23k-0002
+desc: creates a matrix file and checks the highest matrix and prints it
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
